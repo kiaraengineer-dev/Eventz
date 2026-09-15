@@ -1,8 +1,3 @@
-import React from "react";
-import { Icon } from "lucide-react";
-import { CalendarDays, MapPin, Heart } from "lucide-react";
-
-
 
 const collections = [
   {

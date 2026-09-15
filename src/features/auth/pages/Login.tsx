@@ -2,10 +2,6 @@ import { Mail, Lock } from "lucide-react";
 import Button from "../../../shared/components/ui/Button";
 import { Link, useNavigate } from "react-router-dom";
 
-import Input from "../../../shared/components/ui/Input";
-import PasswordInput from "../../../shared/components/ui/PasswordInput";
-import Checkbox from "../../../shared/components/ui/Checkbox";
-
 import { useState } from "react";
 import { login } from "../services/auth.service";
 import { useAuth } from "../../../shared/components/context/AuthContext";

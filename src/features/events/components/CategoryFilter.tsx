@@ -1,6 +1,3 @@
-import { Icon } from "lucide-react";
-import { Music, Laptop, Utensils } from "lucide-react";
-
 type CategoryFilterProps = {
   activeCategory: string;
   onCategoryChange: (category: string) => void;
