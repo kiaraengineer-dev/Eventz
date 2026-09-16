@@ -2,9 +2,16 @@
 
 O Eventz é uma plataforma web para descoberta e gerenciamento de eventos. A aplicação permite visualizar eventos, realizar cadastro e login de usuários e criar, editar e excluir eventos próprios.
 
-O projeto foi desenvolvido como um projeto pessoal, com foco em desenvolvimento Full Stack, integração entre frontend e backend, autenticação, banco de dados e testes automatizados.
+O projeto possui integração entre frontend, backend e banco de dados, além de autenticação de usuários com JWT.
 
 ---
+## Projeto
+
+Aplicação: https://eventz-ticket.vercel.app
+
+Backend: https://eventz-backend-dkp8.onrender.com
+
+##
 
 ##  Funcionalidades
 
@@ -58,6 +65,8 @@ Atualmente, o projeto possui **5 testes automatizados**, todos passando.
 * Tailwind CSS
 * React Router
 * Axios
+* Zustand
+* Swiper
 * Lucide React
 * Vitest
 * React Testing Library
@@ -74,6 +83,13 @@ Atualmente, o projeto possui **5 testes automatizados**, todos passando.
 ### Banco de dados
 
 * PostgreSQL
+* Neon
+
+### Deploy
+
+* Vercel — Frontend
+* Render — Backend
+* Neon — Banco de dados
 
 ### Ferramentas
 
@@ -139,6 +155,12 @@ Instale as dependências:
 npm install
 ```
 
+Crie o arquivo .env:
+
+```text
+VITE_API_URL=http://localhost:8080/api
+```
+
 Execute o projeto:
 
 ```bash
@@ -154,6 +176,12 @@ http://localhost:5173
 ### Backend
 
 Entre na pasta do backend e execute a aplicação Spring Boot utilizando sua IDE ou Maven.
+
+O backend está disponível no repositório:
+
+```bash
+https://github.com/kiaraengineer-dev/eventz-api
+```
 
 O backend utiliza a porta:
 
@@ -193,31 +221,18 @@ eventz
 
 ## Autenticação
 
-A autenticação da aplicação utiliza **JWT (JSON Web Token)**.
+A autenticação é realizada através de JWT (JSON Web Token).
 
-O fluxo básico é:
+Após o login, o backend gera um token que é utilizado para acessar endpoints protegidos da API.
 
-```text
-Cadastro
-   ↓
-Login
-   ↓
-Backend valida usuário
-   ↓
-JWT é gerado
-   ↓
-Token armazenado no frontend
-   ↓
-Requisições autenticadas
-```
+O backend utiliza:
 
-As rotas protegidas utilizam o token para identificar o usuário autenticado.
+Spring Security
+BCrypt para criptografia das senhas
+JWT para autenticação
+DTOs para transferência de dados
 
----
-
-##  Endpoints
-
-### Autenticação
+##  Endpoints - Autenticação
 
 ```text
 POST /api/auth/login
