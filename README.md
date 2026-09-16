@@ -104,7 +104,7 @@ Atualmente, o projeto possui **5 testes automatizados**, todos passando.
 
 ## Estrutura do projeto
 
-
+```text
 Eventz/
 ├── src/
 │   ├── features/
@@ -120,10 +120,11 @@ Eventz/
 ├── vite.config.ts
 ├── vitest.config.ts
 └── README.md
-
+```
 
 O backend possui uma estrutura baseada em:
 
+```text
 
 backend/
 ├── config
@@ -134,7 +135,7 @@ backend/
 ├── repository
 ├── security
 └── service
-
+```
 
 ---
 
