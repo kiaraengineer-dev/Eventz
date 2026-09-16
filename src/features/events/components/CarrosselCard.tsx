@@ -6,9 +6,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const banners = [
-  "/public/images/BannerDoces.png",
-  "/public/images/BannerDança.png",
-  "/public/images/BannerBaile.png",
+  "/images/BannerDoces.png",
+  "/images/BannerDança.png",
+  "/images/BannerBaile.png",
 ];
 
 export default function CarouselCard() {
